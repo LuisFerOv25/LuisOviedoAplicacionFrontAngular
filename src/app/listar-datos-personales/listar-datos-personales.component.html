@@ -1,0 +1,44 @@
+<div class="row mt3 py-3">
+    <div class="col lg6">
+      <h3>Listar datos personales</h3>
+    </div>
+    <div class="col lg6">
+      <button type="button" class="btn btn-success float end">Agregar nuevos datos</button>
+    </div>
+  
+  </div>
+  <table class="table table-bordered border-dark" >
+    <thead>
+      <tr class="text-center">
+        <td>identificacion</td>
+        <td>nombre</td>
+        <td>apellido</td>
+        <td>direccion</td>
+        <td>email</td>
+        <td>telefono</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let coment of listComentarios">
+        <td>
+          {{coment.identificacion}}
+        </td>
+        <td>
+          {{coment.nombre}}
+        </td>
+        <td>
+          {{coment.apellido}}
+        </td>
+        <td>
+          {{coment.direccion}}
+        </td>
+        <td>
+          {{coment.email}}
+        </td>
+        <td>
+          {{coment.telefono}}
+        </td>
+      </tr>
+    </tbody>
+  
+  </table>
